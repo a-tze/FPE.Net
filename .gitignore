@@ -1,0 +1,6 @@
+.vs/
+*/bin/
+*/obj/
+packages/
+App.local.config
+App.config.mine
