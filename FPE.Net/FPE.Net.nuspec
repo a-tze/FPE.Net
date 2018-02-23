@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>FPE.Net</id>
+        <version>1.0.0.0</version>
+        <title>FPE.Net, Format-Preserving-Encryption</title>
+        <authors>see README</authors>
+        <owners>Matthias Hunstock</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Library providing AES-FF1 algorithm for encryption of small amounts of data.</description>
+        <copyright>see README</copyright>
+        <language>en-US</language>
+        <dependencies>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\Release\FPE.Net.dll" target="lib\net45\FPE.Net.dll" />
+    </files>
+</package>
