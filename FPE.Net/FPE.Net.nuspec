@@ -14,6 +14,7 @@
         </dependencies>
     </metadata>
     <files>
-        <file src="bin\Release\FPE.Net.dll" target="lib\net45\FPE.Net.dll" />
+        <file src="bin\$configuration$\FPE.Net.dll" target="lib\net45\FPE.Net.dll" />
+		<file src="bin\$configuration$\netstandard2.0\FPE.Net.dll" target="lib\netstandard2.0\FPE.Net.dll" />
     </files>
 </package>
