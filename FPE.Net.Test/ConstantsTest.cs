@@ -1,32 +1,32 @@
 using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Numerics;
+using NUnit.Framework;
 
-namespace FPE.Net.Test
-{
+// ReSharper disable ExpressionIsAlwaysNull
+// ReSharper disable EmptyGeneralCatchClause
 
-    /**
-     * JUnit test cases for the Constants class
-     * 
-     * @author Kai Johnson
-     *
-     */
-    [TestClass]
-    public class ConstantsTest {
+namespace FPE.Net.Test;
 
-        [TestMethod]
-        public void testConstants() {
+/**
+ * JUnit test cases for the Constants class
+ *
+ * @author Kai Johnson
+ *
+ */
+[TestFixture]
+public class ConstantsTest {
+
+    [Test]
+    public void testConstants() {
             // validate values of MINLEN and MAXLEN
-            Assert.IsTrue(Constants.MINLEN >= 2);
-            Assert.IsTrue(Constants.MINLEN <= Constants.MAXLEN);
-            Assert.IsTrue(Constants.MAXLEN <= Math.Pow(2, 32));
+            Assert.That(Constants.MINLEN >= 2);
+            Assert.That(Constants.MINLEN <= Constants.MAXLEN);
+            Assert.That(Constants.MAXLEN <= Math.Pow(2, 32));
 
             // validate values of MINRADIX and MAXRADIX
-            Assert.IsTrue(Constants.MINRADIX >= 2);
-            Assert.IsTrue(Constants.MINRADIX <= Constants.MAXRADIX);
-            Assert.IsTrue(Constants.MAXRADIX <= Math.Pow(2, 16));
+            Assert.That(Constants.MINRADIX >= 2);
+            Assert.That(Constants.MINRADIX <= Constants.MAXRADIX);
+            Assert.That(Constants.MAXRADIX <= Math.Pow(2, 16));
 
         }
 
-    }
 }
